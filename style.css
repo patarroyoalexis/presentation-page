@@ -24,6 +24,7 @@
     }
   }
   
+
   
   body{
     font-family: 'Montserrat';
@@ -89,10 +90,10 @@
   
   .nav-list a {
     display: block;
-    font-size: 2.2rem;
+    font-size: 2rem;
     padding: 2rem;
   }
-  
+
   .welcome-section {
     display: flex;
     align-items: center;
