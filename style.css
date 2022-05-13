@@ -1,9 +1,14 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto+Mono&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
 
 * {
     margin: 0;
     padding:0;
+    color: White;
   }
   
   html{
@@ -54,7 +59,8 @@
   
   span{
     
-    color: Firebrick;
+    color: yellow;
+    
   }
   
   a{
@@ -62,11 +68,13 @@
     color: white;
     text-shadow: 1px 1px 2px black;
   }
+
   .subtitle{
     color: White;
-    font-style: italic;
+    font-family: 'roboto mono';
     text-shadow: 1px 1px 2px black;
-  }
+    }
+  
   
   .btn{
     padding:0.5rem 1rem;
@@ -79,7 +87,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: SteelBlue;
+    background: rgb(139, 155, 170);
     
   }
   
@@ -95,29 +103,37 @@
   }
 
   .nav-list a:hover {
-    background-color: Firebrick;
-    transition: background-color .1s;
+    background-color: rgb(212, 212, 0);
+    transition: background-color 1s;
   }
 
   .welcome-section {
+    padding-top: 5em;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction:column;
     width: 100%;
     height: 100vh;
-    background-color: lightblue;
-    
+    background-image: url("media/Alexis-desarrollando.jpg");
+    background-color: rgb(80, 80, 80);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
   }
   
+
+
   .projects-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: PaleTurquoise;
+    background: rgb(147, 164, 180);
     
   }
+
   
   .projects-section-header{
     margin-bottom: 5rem;
@@ -125,9 +141,14 @@
   }
   
   .btn-show-all{
-    background: Firebrick;
+    background: rgb(220, 220, 0);
     padding: 1em;
     border-radius: 8px;
+  }
+
+  .btn-show-all:hover{
+    background-color: rgb(199, 199, 0);
+    transition: background-color 1s;
   }
   
   .projects-grid {
@@ -146,10 +167,12 @@
   }
   
   .project-title{
-    background: Cadetblue;
+    background:rgb(122, 137, 151);
     padding: 2rem 0rem 1rem 0rem;
     border-radius: 8px;
   }
+
+
   .project-image{
     font-size: 5em;
   }
@@ -160,7 +183,7 @@
     flex-direction: column;
     width: 100%;
     height: 90vh;
-    background: LightSkyBlue;
+    background: rgb(147, 169, 190);
   }
   
   .contact-links {
@@ -169,8 +192,15 @@
     flex-wrap: wrap;
     margin: 4rem;
   }
+
+  .contact-details:hover {
+    color: yellow;
+    transition: color 1s;
+  }
   
   footer{
-    background: LightSkyBlue;
-    font-size: 1.5rem;  
+    background: rgb(147, 169, 190);
+    font-size: 1.5rem; 
+    padding-left: 1em;
+
   }
